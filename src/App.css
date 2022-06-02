@@ -9,7 +9,7 @@
 }
 .bottom {
   max-height: calc(100vh - 70px);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 4rem;
 }
 @media screen and (max-width: 970px) {
