@@ -58,7 +58,7 @@
 @media screen and (max-width: 960px) {
   .screen-div {
     left: 50%;
-    top: 55%;
+    top: 52%;
     transform: translate(-50%, -50%);
   }
   .hero-cont {
@@ -68,6 +68,10 @@
 @media screen and (max-width: 518px) {
   .screen-div img {
     max-width: 360px;
+  }
+
+  .screen-div {
+    top: 55%;
   }
   .btn-div {
     top: 18%;
