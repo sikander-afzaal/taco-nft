@@ -58,7 +58,7 @@
 @media screen and (max-width: 960px) {
   .screen-div {
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
   }
   .hero-cont {
@@ -75,5 +75,35 @@
   }
   .btn-div button {
     width: 190px;
+  }
+}
+@media screen and (min-height: 857px) and (min-width: 960px) {
+  .screen-div {
+    top: 35%;
+  }
+}
+@media screen and (max-height: 857px) and (min-width: 960px) {
+  .screen-div {
+    top: 29%;
+  }
+}
+@media screen and (max-height: 804px) and (min-width: 960px) {
+  .screen-div {
+    top: 24%;
+  }
+}
+@media screen and (max-height: 739px) and (min-width: 960px) {
+  .screen-div {
+    top: 20%;
+  }
+}
+@media screen and (max-height: 688px) and (min-width: 960px) {
+  .screen-div {
+    top: 15%;
+  }
+}
+@media screen and (max-height: 620px) and (min-width: 960px) {
+  .screen-div {
+    top: 8%;
   }
 }
