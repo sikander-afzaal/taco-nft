@@ -199,7 +199,7 @@
     left: 10% !important;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 466px) {
   .about-mon {
     max-width: 360px;
   }
@@ -218,6 +218,26 @@
   }
   .mint-func-div-cont .mint-now {
     width: 180px;
+  }
+  .thumbnail ul li {
+    flex: none;
+    width: calc(93% / 2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thumbnail ul li img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .thumb-img {
+    width: 140px;
+  }
+  .splide__track--nav > .splide__list > .splide__slide.is-active {
+    border: 3px solid #36454f !important;
+  }
+  .splide__track--nav > .splide__list > .splide__slide {
+    border: 3px solid #36454f !important;
   }
 }
 @media screen and (max-width: 430px) {
