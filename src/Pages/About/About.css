@@ -1,0 +1,246 @@
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 170px;
+  padding-top: 2rem;
+}
+.slider-div {
+  width: 572px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(54, 69, 79, 0.69) 6.77%,
+    rgba(151, 161, 50, 0.71) 100%
+  );
+  padding: 20px;
+  gap: 40px;
+  border-radius: 14px;
+}
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-img img {
+  width: 348px;
+  height: 316px;
+  object-fit: cover;
+}
+.thumb-img {
+  width: 100%;
+  height: 191px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail {
+  width: 100%;
+}
+.thumbnail ul {
+  display: flex;
+  gap: 20px;
+}
+.thumbnail ul li {
+  flex: 0.5;
+}
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  background: #36454f;
+  border: 4px solid #36454f !important;
+}
+.splide__track--nav > .splide__list > .splide__slide {
+  border: 4px solid #36454f !important;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.splide__arrow--next {
+  left: 8% !important;
+  right: none;
+}
+.splide__arrow--prev {
+  left: 0 !important;
+  right: none;
+}
+.splide__arrow {
+  top: 3% !important;
+  background: #9aa71c !important;
+  opacity: 1 !important;
+  height: 34px !important;
+  width: 34px !important;
+}
+.splide__arrow svg {
+  fill: white !important;
+}
+.mint-func-div-cont {
+  position: fixed;
+  right: 14%;
+  top: 41%;
+}
+.mint-func-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.mint-func-div-cont .mint-now {
+  width: 244px;
+}
+.func-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.func-row button {
+  width: 60px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  color: white;
+  background: linear-gradient(90.26deg, #36454f 31.76%, #99a332 100%);
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+.value {
+  width: 105px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+  background: linear-gradient(90.26deg, #36454f 31.76%, #99a332 100%);
+  border-radius: 14px;
+}
+.about-mon {
+  display: none;
+}
+@media screen and (max-width: 1686px) {
+  .mint-func-div-cont {
+    right: 12%;
+  }
+}
+@media screen and (max-width: 1438px) {
+  .mint-func-div-cont {
+    right: 11%;
+  }
+  .about {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 1244px) {
+  .mint-func-div-cont {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 1136px) {
+  .mint-func-div-cont {
+    right: 9%;
+  }
+  .about {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .mint-func-div-cont {
+    right: 8%;
+  }
+  .about {
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .mint-func-div-cont {
+    right: 0%;
+    top: 0%;
+    position: relative;
+  }
+  .mint-func-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 4;
+    top: 43%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .about-mon {
+    display: block;
+    max-width: 450px;
+    object-fit: contain;
+  }
+  .about {
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 594px) {
+  .slider-div {
+    width: 97%;
+  }
+  .splide__arrow--next {
+    left: 10% !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .about-mon {
+    max-width: 360px;
+  }
+  .func-row button {
+    width: 40px;
+    height: 43px;
+    font-size: 36px;
+  }
+  .value {
+    width: 96px;
+    height: 43px;
+  }
+  .mint-func-div-cont .mint-now {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .splide__arrow--next {
+    left: 12% !important;
+  }
+  .slider-div {
+    padding: 20px 10px;
+  }
+}
+@media screen and (min-height: 857px) and (min-width: 970px) {
+  .mint-func-div-cont {
+    top: 41%;
+  }
+}
+@media screen and (max-height: 857px) and (min-width: 970px) {
+  .mint-func-div-cont {
+    top: 38%;
+  }
+}
+@media screen and (max-height: 746px) and (min-width: 970px) {
+  .mint-func-div-cont {
+    top: 37%;
+  }
+}
+@media screen and (max-height: 671px) and (min-width: 970px) {
+  .mint-func-div-cont {
+    top: 35%;
+  }
+}

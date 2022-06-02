@@ -1,0 +1,19 @@
+.bottom-cont {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-top: 120px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.bottom {
+  max-height: calc(100vh - 70px);
+  overflow-y: scroll;
+  padding-bottom: 4rem;
+}
+@media screen and (max-width: 970px) {
+  .bottom-cont {
+    background-size: cover;
+  }
+}

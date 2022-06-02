@@ -18,19 +18,19 @@ function Header() {
           icon={faXmark}
           className="menu-closer"
         />
-        <Link to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/" className="nav-link">
           Home
         </Link>
-        <Link to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/About" className="nav-link">
           About
         </Link>
-        <Link to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/" className="nav-link">
           Roadmap
         </Link>
-        <Link to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/" className="nav-link">
           Team
         </Link>
-        <Link to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/" className="nav-link">
           Faq
         </Link>
         <div className="social-div">
