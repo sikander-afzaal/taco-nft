@@ -207,10 +207,14 @@
     width: 40px;
     height: 43px;
     font-size: 36px;
+    display: grid;
+    place-items: center;
   }
   .value {
     width: 96px;
     height: 43px;
+    display: grid;
+    place-items: center;
   }
   .mint-func-div-cont .mint-now {
     width: 180px;
