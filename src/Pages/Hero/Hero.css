@@ -54,7 +54,7 @@
 @media screen and (max-width: 970px) {
   .screen-div {
     left: 50%;
-    top: 56%;
+    top: 58%;
     transform: translate(-50%, -50%);
   }
   .screen-div img {
@@ -71,7 +71,7 @@
 }
 @media screen and (max-width: 518px) {
   .screen-div {
-    top: 57%;
+    top: 58%;
   }
 }
 @media screen and (min-height: 857px) and (min-width: 970px) {
