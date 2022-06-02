@@ -114,11 +114,18 @@
 }
 @media screen and (max-height: 688px) and (min-width: 970px) {
   .screen-div {
-    top: 15%;
+    top: 28%;
+  }
+  .screen-div img {
+    max-width: 350px;
+  }
+  .btn-div {
+    top: 18%;
+    left: 31%;
   }
 }
 @media screen and (max-height: 620px) and (min-width: 970px) {
   .screen-div {
-    top: 8%;
+    top: 27%;
   }
 }
