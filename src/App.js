@@ -5,9 +5,12 @@ import Header from "./Layout/Header/Header";
 import Hero from "./Pages/Hero/Hero";
 import About from "./Pages/About/About";
 import Team from "./Pages/Team/Team";
+import Faq from "./Pages/Faq/Faq";
 import bg1 from "./Assets/bg1.png";
 import bg2 from "./Assets/bg2.png";
 import bg4 from "./Assets/bg4.png";
+import bg5 from "./Assets/bg5.png";
+
 function App() {
   const location = useLocation();
   const [bg, setBg] = useState(bg1);
@@ -22,6 +25,9 @@ function App() {
         break;
       case "/Team":
         setBg(bg4);
+        break;
+      case "/Faq":
+        setBg(bg5);
         break;
 
       default:
@@ -38,6 +44,7 @@ function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/About" element={<About />} />
             <Route path="/Team" element={<Team />} />
+            <Route path="/Faq" element={<Faq />} />
           </Routes>
         </div>
       </div>

@@ -30,7 +30,7 @@ function Header() {
         <Link onClick={() => setOpen(false)} to="/Team" className="nav-link">
           Team
         </Link>
-        <Link onClick={() => setOpen(false)} to="/" className="nav-link">
+        <Link onClick={() => setOpen(false)} to="/Faq" className="nav-link">
           Faq
         </Link>
         <div className="social-div">
