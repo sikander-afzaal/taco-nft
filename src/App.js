@@ -54,7 +54,7 @@ function App() {
         className="bottom-cont"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: cover }}
       >
-        <div className="bottom">
+        <div className={`bottom ${cover === "cover" ? "hide-scroll" : ""}`}>
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/About" element={<About />} />
