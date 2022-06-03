@@ -1,0 +1,22 @@
+.footer {
+  background: linear-gradient(90.38deg, #36454f 36.98%, #99a332 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0rem;
+  gap: 10px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 2rem;
+}
+.copy {
+  font-size: 11px;
+  color: #ffffff;
+}

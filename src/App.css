@@ -3,7 +3,6 @@
   max-height: 100vh;
   overflow-y: auto;
   padding-top: 120px;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -14,6 +13,6 @@
 }
 @media screen and (max-width: 970px) {
   .bottom-cont {
-    background-size: cover;
+    background-size: cover !important;
   }
 }
