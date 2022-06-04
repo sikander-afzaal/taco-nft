@@ -13,6 +13,7 @@
   max-height: calc(100vh - 70px);
   overflow-y: auto;
   padding-bottom: 4rem;
+  width: 100%;
 }
 @media screen and (max-width: 970px) {
   .bottom-cont {
