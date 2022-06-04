@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem 50px;
-  gap: 4rem;
+  padding-inline: 50px;
+  gap: 1rem;
 }
 .title {
   background: linear-gradient(90.26deg, #e09500 0.74%, #0b673f 100%);

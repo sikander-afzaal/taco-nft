@@ -4,13 +4,13 @@
   align-items: flex-start;
   flex-direction: column;
   padding-inline: 50px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
+  height: 100%;
 }
-.hide-scroll::-webkit-scrollbar {
+.hide-scroll::-webkit-scrollbar,
+.cont::-webkit-scrollbar {
   display: none !important;
 }
 .roadmap .title {
@@ -18,6 +18,14 @@
   left: 0rem;
   position: sticky;
   z-index: 4;
+}
+.cont {
+  align-self: center;
+  max-width: fit-content;
+  overflow-y: scroll;
+  max-height: 68vh;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .roadmap-grid {
   display: grid;
@@ -27,6 +35,7 @@
   position: relative;
   z-index: 3;
   align-self: center;
+  max-height: 80%;
 }
 .roadmap-grid::after {
   content: "";
