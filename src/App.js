@@ -13,6 +13,7 @@ import bg3 from "./Assets/bg3.png";
 import bg4 from "./Assets/bg4.png";
 import bg5 from "./Assets/bg5.png";
 import Roadmap from "./Pages/Roadmap/Roadmap";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,10 @@ function App() {
         setBg(bg5);
         setCover("100% 100%");
         break;
+      case "/Contact":
+        setBg(bg1);
+        setCover("cover");
+        break;
 
       default:
         break;
@@ -61,6 +66,7 @@ function App() {
             <Route path="/Roadmap" element={<Roadmap />} />
             <Route path="/Team" element={<Team />} />
             <Route path="/Faq" element={<Faq />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

@@ -5,6 +5,9 @@
   padding-top: 120px;
   background-repeat: no-repeat;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bottom {
   max-height: calc(100vh - 70px);
