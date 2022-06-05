@@ -6,7 +6,7 @@
 .screen-div {
   position: absolute;
   left: 27%;
-  top: 29%;
+  top: 28%;
 }
 .screen-div img {
   max-width: 450px;
@@ -80,14 +80,14 @@
     top: 35%;
   }
 }
-@media screen and (max-height: 857px) and (min-width: 970px) {
+@media screen and (max-height: 820px) and (min-width: 970px) {
   .screen-div {
-    top: 29%;
+    top: 27%;
   }
 }
-@media screen and (max-height: 804px) and (min-width: 970px) {
+@media screen and (max-height: 776px) and (min-width: 970px) {
   .screen-div {
-    top: 26%;
+    top: 24%;
   }
 }
 @media screen and (max-height: 739px) and (min-width: 970px) {
@@ -95,7 +95,7 @@
     top: 21%;
   }
 }
-@media screen and (max-height: 688px) and (min-width: 970px) {
+@media screen and (max-height: 695px) and (min-width: 970px) {
   .screen-div {
     top: 30%;
   }
@@ -107,7 +107,7 @@
     left: 31%;
   }
 }
-@media screen and (max-height: 620px) and (min-width: 970px) {
+@media screen and (max-height: 644px) and (min-width: 970px) {
   .screen-div {
     top: 27%;
   }
