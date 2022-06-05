@@ -78,7 +78,7 @@
 }
 .mint-func-div-cont {
   position: fixed;
-  right: 15%;
+  right: 11%;
 }
 .mint-func-div {
   display: flex;
@@ -86,6 +86,11 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  max-width: 350px;
+  text-align: center;
+}
+.mint-func-div p {
+  color: white;
 }
 .desc-about {
   width: 100%;
@@ -94,14 +99,15 @@
   text-align: center;
 }
 .modal {
-  padding: 20px;
+  padding: 30px 20px;
   width: 70%;
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 400px;
+  max-height: 450px;
+  overflow-y: scroll;
   background: linear-gradient(
     180deg,
     rgba(54, 69, 79, 0.69) 6.77%,
@@ -109,7 +115,7 @@
   );
   border-radius: 14px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 7;
 }
 .modal svg {
@@ -141,12 +147,12 @@
 }
 @media screen and (max-width: 1686px) {
   .mint-func-div-cont {
-    right: 15%;
+    right: 9%;
   }
 }
 @media screen and (max-width: 1490px) {
   .mint-func-div-cont {
-    right: 13%;
+    right: 8%;
   }
   .about {
     padding-left: 25px;
@@ -154,26 +160,20 @@
 }
 @media screen and (max-width: 1244px) {
   .mint-func-div-cont {
-    right: 12%;
+    right: 8%;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 1136px) {
   .mint-func-div-cont {
-    right: 11%;
+    right: 7%;
   }
   .about {
     padding-left: 15px;
   }
 }
-@media screen and (max-width: 1030px) {
-  .mint-func-div-cont {
-    right: 10%;
-  }
-  .about {
-    padding-left: 5px;
-  }
-}
-@media screen and (max-width: 970px) {
+
+@media screen and (max-width: 1112px) {
   .mint-func-div-cont {
     right: 0%;
     top: 0%;
@@ -182,10 +182,12 @@
   .mint-func-div {
     z-index: 4;
     top: 43%;
-    left: 56%;
+    left: 85%;
+    gap: 10px;
     transform: translate(-50%, -50%);
     position: absolute;
   }
+
   .about-mon {
     display: block;
     max-width: 450px;
@@ -264,6 +266,12 @@
   .splide__track--nav > .splide__list > .splide__slide {
     border: 3px solid #36454f !important;
   }
+  .mint-func-div p {
+    display: none;
+  }
+  .mint-func-div {
+    left: 67%;
+  }
 }
 @media screen and (max-width: 430px) {
   .splide__arrow--next {
@@ -284,26 +292,26 @@
 }
 @media screen and (min-height: 857px) and (min-width: 970px) {
   .mint-func-div-cont {
-    top: 43%;
+    top: 40%;
   }
 }
 @media screen and (max-height: 857px) and (min-width: 970px) {
   .mint-func-div-cont {
-    top: 43%;
+    top: 40%;
   }
 }
 @media screen and (max-height: 746px) and (min-width: 970px) {
   .mint-func-div-cont {
-    top: 43%;
+    top: 38%;
   }
 }
 @media screen and (max-height: 671px) and (min-width: 970px) {
   .mint-func-div-cont {
-    top: 43%;
+    top: 36%;
   }
 }
 @media screen and (max-height: 599px) and (min-width: 970px) {
   .mint-func-div-cont {
-    top: 42%;
+    top: 34%;
   }
 }
