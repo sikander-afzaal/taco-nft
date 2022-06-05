@@ -44,7 +44,7 @@ function App() {
         break;
       case "/Contact":
         setBg(bg1);
-        setCover("cover");
+        setCover("100% 100%");
         break;
 
       default:
