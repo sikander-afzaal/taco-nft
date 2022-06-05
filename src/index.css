@@ -17,7 +17,9 @@ p {
 *::-webkit-scrollbar {
   display: none;
 }
-
+body {
+  background: linear-gradient(90.26deg, #36454f 32.79%, #9ca631 100%);
+}
 @media screen and (max-width: 700px) {
   *::-webkit-scrollbar {
     display: none;
