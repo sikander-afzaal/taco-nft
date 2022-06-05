@@ -7,22 +7,15 @@ import img from "../../Assets/main-img.png";
 import thumb1 from "../../Assets/thumb1.png";
 import thumb2 from "../../Assets/thumb2.png";
 import monitor from "../../Assets/small-screen.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 function About() {
   const slider1 = useRef();
   const slider2 = useRef();
-  const [value, setValue] = useState(1);
+  const [openModal, setOpenModal] = useState(false);
   useEffect(() => {
     slider1.current.sync(slider2.current.splide);
   }, [slider1, slider2]);
-
-  const increment = () => {
-    setValue((prev) => prev + 1);
-  };
-  const decrement = () => {
-    if (value > 0) {
-      setValue((prev) => prev - 1);
-    }
-  };
 
   return (
     <div className="about">
@@ -81,13 +74,29 @@ function About() {
       <div className="mint-func-div-cont">
         <img src={monitor} className="about-mon" alt="" />
         <div className="mint-func-div">
-          <div className="mint-now">Mint Now</div>
-          <div className="func-row">
-            <button onClick={decrement}>-</button>
-            <h2 className="value">{value}</h2>
-            <button onClick={increment}>+</button>
-          </div>
+          {" "}
+          <button onClick={() => setOpenModal(true)} className="mint-now">
+            Learn More
+          </button>
         </div>
+      </div>
+      <div
+        onClick={() => setOpenModal(false)}
+        className={`overlay  ${openModal ? "overlay-open" : ""}`}
+      ></div>
+      <div className={`modal ${openModal ? "modal-open" : ""}`}>
+        <FontAwesomeIcon onClick={() => setOpenModal(false)} icon={faXmark} />
+        <p className="desc-about">
+          In 2017 a group of like-minded people got together and opened
+          @streatscanada’s first restaurant location in Canada. Since its
+          inception, StrEATS has grown from its original standalone store, to a
+          franchise composed of 15 locations, spread all across Canada. Amidst a
+          global pandemic and multiple government shut downs, through hard work
+          and impeccable management, StrEATS managed to have its most successful
+          year to date. Achieving $6m in revenue, and a brand growth of 75%.
+          With projected earnings in 2022 being upwards of $10m, and plans to
+          expand into the US
+        </p>
       </div>
     </div>
   );

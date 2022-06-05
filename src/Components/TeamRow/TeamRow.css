@@ -1,11 +1,11 @@
 .team-row {
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
+  grid-template-columns: 0.4fr 1fr;
   gap: 40px;
   width: 100%;
 }
 .grid-2 {
-  grid-template-columns: 1fr 0.2fr;
+  grid-template-columns: 1fr 0.4fr;
 }
 .order {
   grid-column: 2/3;

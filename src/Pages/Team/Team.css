@@ -5,6 +5,8 @@
   justify-content: center;
   padding-inline: 50px;
   gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .title {
   background: linear-gradient(90.26deg, #e09500 0.74%, #0b673f 100%);
