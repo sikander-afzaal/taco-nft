@@ -116,7 +116,7 @@
   border-radius: 14px;
   justify-content: center;
   align-items: flex-start;
-  z-index: 7;
+  z-index: 11;
 }
 .modal svg {
   position: absolute;
@@ -134,7 +134,7 @@
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.69);
-  z-index: 6;
+  z-index: 10;
 }
 .about-mon {
   display: none;
