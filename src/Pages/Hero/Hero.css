@@ -77,7 +77,12 @@
 }
 @media screen and (min-height: 857px) and (min-width: 970px) {
   .screen-div {
-    top: 35%;
+    top: 33%;
+  }
+}
+@media screen and (max-height: 883px) and (min-width: 970px) {
+  .screen-div {
+    top: 30%;
   }
 }
 @media screen and (max-height: 820px) and (min-width: 970px) {
