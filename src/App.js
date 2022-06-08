@@ -14,11 +14,18 @@ import bg4 from "./Assets/bg4.png";
 import bg5 from "./Assets/bg5.png";
 import Roadmap from "./Pages/Roadmap/Roadmap";
 import Contact from "./Pages/Contact/Contact";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   const location = useLocation();
   const [bg, setBg] = useState(bg1);
   const [cover, setCover] = useState("");
+  const [loader, setloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 6000);
+  }, []);
   useEffect(() => {
     const path = location.pathname;
     switch (path) {
@@ -54,23 +61,29 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <div
-        className="bottom-cont"
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: cover }}
-      >
-        <div className={`bottom ${cover === "cover" ? "hide-scroll" : ""}`}>
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Roadmap" element={<Roadmap />} />
-            <Route path="/Team" element={<Team />} />
-            <Route path="/Faq" element={<Faq />} />
-            <Route path="/Contact" element={<Contact />} />
-          </Routes>
-        </div>
-      </div>
-      {/* <Footer /> */}
+      {loader ? (
+        <Loader />
+      ) : (
+        <>
+          <Header />
+          <div
+            className="bottom-cont"
+            style={{ backgroundImage: `url(${bg})`, backgroundSize: cover }}
+          >
+            <div className={`bottom ${cover === "cover" ? "hide-scroll" : ""}`}>
+              <Routes>
+                <Route path="/" element={<Hero />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Roadmap" element={<Roadmap />} />
+                <Route path="/Team" element={<Team />} />
+                <Route path="/Faq" element={<Faq />} />
+                <Route path="/Contact" element={<Contact />} />
+              </Routes>
+            </div>
+          </div>
+          {/* <Footer /> */}
+        </>
+      )}
     </div>
   );
 }
