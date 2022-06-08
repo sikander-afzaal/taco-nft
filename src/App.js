@@ -22,7 +22,9 @@ function App() {
   const [cover, setCover] = useState("");
   const [loader, setloader] = useState(true);
   useEffect(() => {
-    setloader(false);
+    setTimeout(() => {
+      setloader(false);
+    }, 5000);
   }, []);
   useEffect(() => {
     const path = location.pathname;
@@ -59,29 +61,24 @@ function App() {
 
   return (
     <div className="App">
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Header />
-          <div
-            className="bottom-cont"
-            style={{ backgroundImage: `url(${bg})`, backgroundSize: cover }}
-          >
-            <div className={`bottom ${cover === "cover" ? "hide-scroll" : ""}`}>
-              <Routes>
-                <Route path="/" element={<Hero />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Roadmap" element={<Roadmap />} />
-                <Route path="/Team" element={<Team />} />
-                <Route path="/Faq" element={<Faq />} />
-                <Route path="/Contact" element={<Contact />} />
-              </Routes>
-            </div>
-          </div>
-          {/* <Footer /> */}
-        </>
-      )}
+      {loader ? <Loader /> : ""}
+      <Header />
+      <div
+        className="bottom-cont"
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: cover }}
+      >
+        <div className={`bottom ${cover === "cover" ? "hide-scroll" : ""}`}>
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Roadmap" element={<Roadmap />} />
+            <Route path="/Team" element={<Team />} />
+            <Route path="/Faq" element={<Faq />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }
