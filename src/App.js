@@ -22,9 +22,7 @@ function App() {
   const [cover, setCover] = useState("");
   const [loader, setloader] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
-      setloader(false);
-    }, 6000);
+    setloader(false);
   }, []);
   useEffect(() => {
     const path = location.pathname;
