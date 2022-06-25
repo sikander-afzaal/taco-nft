@@ -38,7 +38,7 @@ function App() {
         setCover("100% 100%");
         break;
       case "/Roadmap":
-        setBg(bg3);
+        setBg("");
         setCover("cover");
         break;
       case "/Team":
