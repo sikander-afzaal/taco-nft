@@ -5,6 +5,7 @@
   background: #021816;
   width: 100%;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .roadmap {
   display: flex;
@@ -42,6 +43,15 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 3rem;
+  position: relative;
+  isolation: isolate;
+}
+.roadline {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 .grid-text {
   display: flex;
@@ -53,6 +63,15 @@
 }
 .grid-img {
   align-self: center;
+  max-width: 300px;
+  justify-self: center;
+}
+.grid-img:last-of-type {
+  align-self: flex-start;
+}
+.grid-img img {
+  max-width: 100%;
+  object-fit: contain;
 }
 .grid-text h1 {
   font-size: 53px;
@@ -64,4 +83,47 @@
   line-height: 23px;
   color: #ffffff;
   max-width: 580px;
+}
+@media screen and (max-width: 1226px) {
+  .grid-text p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .roadline {
+    display: none;
+  }
+  .roadmap-grid {
+    margin-top: 3rem;
+    grid-template-rows: auto auto auto;
+  }
+  .grid-img:last-of-type {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  .roadmap {
+    padding-inline: 15px;
+  }
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    place-items: center;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+  .grid-img {
+    margin-top: 6rem;
+  }
+  .grid-img1 {
+    grid-row: 1/2;
+  }
+  .grid-img3 {
+    grid-row: 5/6;
+  }
+  .grid-text {
+    align-items: center;
+    text-align: center;
+  }
 }
