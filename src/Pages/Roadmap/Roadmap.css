@@ -14,7 +14,7 @@
   flex-direction: column;
   padding-inline: 50px;
   width: 100%;
-  gap: 1rem;
+  gap: 0rem;
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -34,7 +34,6 @@
   align-self: center;
   max-width: fit-content;
   overflow-y: scroll;
-  max-height: 68vh;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -53,6 +52,8 @@
 .road-title span {
   color: #9ca631;
   border-bottom: 4px dashed white;
+  font-size: 3rem;
+  align-self: flex-start;
 }
 .roadmap-grid {
   display: grid;
@@ -101,12 +102,8 @@
   color: #ffffff;
   max-width: 580px;
 }
-@media screen and (max-width: 1226px) {
-  .grid-text p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1076px) {
+
+@media screen and (max-width: 1200px) {
   .roadline {
     display: none;
   }
@@ -116,6 +113,9 @@
   }
   .grid-img:last-of-type {
     align-self: center;
+  }
+  .grid-text p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 770px) {
