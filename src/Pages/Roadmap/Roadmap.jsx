@@ -3,7 +3,6 @@ import "./Roadmap.css";
 import first from "../../Assets/Roadmap/first.png";
 import mid from "../../Assets/Roadmap/mid.png";
 import last from "../../Assets/Roadmap/last.png";
-import logo from "../../Assets/Roadmap/logo.png";
 import line from "../../Assets/Roadmap/line.svg";
 import Loader from "../../Components/Loader/Loader";
 function Roadmap() {
@@ -18,7 +17,9 @@ function Roadmap() {
       {!loader && <Loader />}
       <div className="road-cont">
         <div className="roadmap">
-          <img src={logo} alt="" className="road-logo" />
+          <p className="road-title">
+            <span>ROAD</span>MAP
+          </p>
           <div className="roadmap-grid">
             <img src={line} alt="" className="roadline" />
             <div className="grid-text">

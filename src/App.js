@@ -9,7 +9,6 @@ import Team from "./Pages/Team/Team";
 import Faq from "./Pages/Faq/Faq";
 import bg1 from "./Assets/bg1.png";
 import bg2 from "./Assets/bg2.png";
-import bg3 from "./Assets/bg3.png";
 import bg4 from "./Assets/bg4.png";
 import bg5 from "./Assets/bg5.png";
 import Roadmap from "./Pages/Roadmap/Roadmap";

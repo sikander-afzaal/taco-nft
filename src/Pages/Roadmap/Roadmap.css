@@ -38,6 +38,21 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+.road-title {
+  display: flex;
+  align-items: flex-start;
+  font-size: 4rem;
+  color: #9ca631;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  gap: 5px;
+}
+.road-title span {
+  color: #9ca631;
+  font-size: 3rem;
+  border-bottom: 4px dashed white;
+}
 .roadmap-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
