@@ -64,12 +64,12 @@
 }
 .roadline {
   position: absolute;
-  left: 46%;
-  top: 12%;
+  left: 47%;
+  top: 13%;
   transform: translateX(-50%);
   z-index: -1;
   object-fit: contain;
-  height: 60%;
+  height: 59%;
 }
 .grid-text {
   display: flex;
@@ -104,13 +104,19 @@
 }
 @media screen and (max-width: 1314px) {
   .roadline {
-    left: 46%;
+    left: 47%;
     top: 16%;
-    height: 56%;
+    height: 54%;
+  }
+  .grid-img2 {
+    margin-right: 80px;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .grid-img2 {
+    margin-right: 0px;
+  }
   .roadline {
     display: none;
   }
