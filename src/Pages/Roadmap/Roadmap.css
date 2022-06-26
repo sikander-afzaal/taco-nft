@@ -45,9 +45,10 @@
   font-size: 4rem;
   color: #9ca631;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   justify-content: center;
   gap: 5px;
+  font-family: "Hagin-Caps", sans-serif !important;
 }
 .road-title span {
   color: #9ca631;
